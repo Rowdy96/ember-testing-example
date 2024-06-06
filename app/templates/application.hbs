@@ -1,7 +1,12 @@
 {{page-title "EmberTestingExample"}}
 
 {{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
+<ul>
+    <li>
+        <LinkTo @route="home" >Home</LinkTo>
+        <LinkTo @route="products" >Products</LinkTo>
+    </li>
+</ul>
 {{!-- Feel free to remove this! --}}
 
 {{outlet}}
