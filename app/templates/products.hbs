@@ -3,7 +3,7 @@
 <ul>
     {{#if @model.products.length}}
         {{#each @model.products as |item index|}}
-         <li data-text-product={{index}}>{{item.title}}</li>
+         <li data-test-product={{index}}>{{item.title}}</li>
         {{/each}}
     {{else}}
         <li>No products found!!!</li>
